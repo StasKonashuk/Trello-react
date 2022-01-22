@@ -1,0 +1,9 @@
+.listTopContainer {
+  align-items: flex-start;
+  margin-bottom: 0;
+  width: 90%;
+  padding: 2px 5px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
