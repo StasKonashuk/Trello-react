@@ -1,0 +1,128 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(43, 43, 43, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: 2;
+}
+.modalActive {
+  opacity: 1;
+  transform: scale(1);
+}
+.closeModalButton {
+  position: absolute;
+  right: 23px;
+  top: 13px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  color: #fff9;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: none;
+  margin-bottom: 2px;
+}
+.closeModalButton:hover {
+  color: white;
+}
+.closeModalIcon::before {
+  content: ' \2716 ';
+  position: relative;
+  bottom: 17px;
+  right: 8px;
+  font-weight: 100;
+  font-size: 30px;
+}
+.modalContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.editInputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.modalContent {
+  display: flex;
+  flex-direction: row;
+}
+.editTextAreaContainer {
+  display: flex;
+  overflow: auto;
+  padding: 6px 8px 2px;
+  position: relative;
+  width: 250px;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+.saveButton {
+  margin-left: 8px;
+  padding: 6px 12px;
+  background-color: #0079bf;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  border-radius: 3px;
+  align-items: center;
+  font-size: 14px;
+  width: 50%;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 85ms ease-in;
+}
+.saveButton:hover {
+  background-color: #01598b;
+}
+.editTextArea {
+  overflow-wrap: break-word;
+  resize: none;
+  height: 140px;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  color: #172b4d;
+  width: 97%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.editTextArea:focus {
+  outline: 0;
+}
+.removeTaskButton {
+  background: #0009;
+  border: none;
+  font-size: 14px;
+  border-radius: 3px;
+  clear: both;
+  color: #e6e6e6;
+  float: left;
+  cursor: pointer;
+  margin: 7px 0 4px 0px;
+  padding: 6px 12px 6px 8px;
+  text-decoration: none;
+  transition: transform 85ms ease-in;
+}
+.removeTaskButton:hover {
+  transform: translate(5px);
+}
+.removeTaskIcon::before {
+  content: ' \2716 ';
+  color: #e6e6e6;
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  font-size: 14px;
+}
+.removeTaskText {
+  margin-left: 5px;
+}
