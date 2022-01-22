@@ -1,7 +1,6 @@
 .сreateBoardSectionItemContainer {
   margin: 0 2% 2% 0;
   padding: 0;
-  transform: translate(0);
   width: 23.5%;
   height: 100px;
   box-sizing: border-box;
@@ -9,20 +8,23 @@
   padding: 4px 8px;
   position: relative;
 }
-.сreateBoardSectionItem {
+.сreateBoardSectionButton {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: center;
+  color: #172b4d;
   background-color: #091e420a;
   border: none;
+  width: 200px;
   text-align: center;
   border-radius: 3px;
-  box-shadow: none;
-  color: #172b4d;
-  display: table-cell;
-  font-weight: 400;
-  height: 100px;
-  width: 23%;
-  vertical-align: middle;
+  height: 100%;
 }
-.сreateBoardSectionItem:hover {
+.сreateBoardSectionButton:hover {
   background-color: #15243f2f;
 }
 .boardExtrasMenu {

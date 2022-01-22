@@ -27,14 +27,15 @@ const AddBoardButton = () => {
   };
   return (
     <li className={style.сreateBoardSectionItemContainer}>
-      <div
-        className={style.сreateBoardSectionItem}
+      <button
+        type="button"
+        className={style.сreateBoardSectionButton}
         onClick={activatedAddBoardMode}
       >
         <p>
           <span>Создать доску</span>
         </p>
-      </div>
+      </button>
       {addBoardMode && (
         <div className={style.boardExtrasMenu}>
           <div className={style.toolTipContainer}>
