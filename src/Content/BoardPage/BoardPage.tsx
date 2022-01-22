@@ -24,10 +24,6 @@ const BoardPage = () => {
       state.boards.boards.find((board) => board.boardId === boardId)?.taskLists
   );
 
-  const deactivateAddMode = () => {
-    setAddMode(false);
-  };
-
   const onDragEnd = (result: DropResult) => {
     const { destination, source } = result;
     if (!destination) {
