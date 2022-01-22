@@ -1585,7 +1585,7 @@ button {
 ._boardWorkSpaceUpgradeButtonIconContainer_ntwei_325 {
   margin: 0 5px;
 }
-._\441reateboardsectionitemcontainer_12v2p_1 {
+._\441reateboardsectionitemcontainer_1i24u_1 {
   margin: 0 2% 2% 0;
   transform: translate(0);
   width: 23.5%;
@@ -1595,23 +1595,25 @@ button {
   padding: 4px 8px;
   position: relative;
 }
-._\441reateboardsectionitem_12v2p_1 {
+._\441reateboardsectionitem_1i24u_1 {
   background-color: #091e420a;
   border: none;
   text-align: center;
   border-radius: 3px;
   box-shadow: none;
   color: #172b4d;
-  display: table-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   height: 100px;
-  width: 23%;
+  width: 100%;
   vertical-align: middle;
 }
-._\441reateboardsectionitem_12v2p_1:hover {
+._\441reateboardsectionitem_1i24u_1:hover {
   background-color: #15243f2f;
 }
-._boardExtrasMenu_12v2p_28 {
+._boardExtrasMenu_1i24u_30 {
   position: relative;
   left: 180px;
   top: 0px;
@@ -1624,7 +1626,7 @@ button {
   width: 280px;
   z-index: 3;
 }
-._toolTipContainer_12v2p_41 {
+._toolTipContainer_1i24u_43 {
   margin: 0 12px;
   white-space: nowrap;
   box-sizing: border-box;
@@ -1634,7 +1636,7 @@ button {
   align-items: center;
   border-bottom: 1px solid #091e4221;
 }
-._toolTipTitle_12v2p_51 {
+._toolTipTitle_1i24u_53 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1642,7 +1644,7 @@ button {
   color: #6b778c;
   font-size: 14px;
 }
-._closeExtrasMenuButton_12v2p_59 {
+._closeExtrasMenuButton_1i24u_61 {
   width: 30px;
   height: 30px;
   padding: 10px;
@@ -1654,10 +1656,10 @@ button {
   margin-top: 6px;
   z-index: 3;
 }
-._closeExtrasMenuButton_12v2p_59:hover {
+._closeExtrasMenuButton_1i24u_61:hover {
   color: #4d5564;
 }
-._closeExtrasMenuButtonIcon_12v2p_74:before {
+._closeExtrasMenuButtonIcon_1i24u_76:before {
   content: ' \2716';
   position: relative;
   bottom: 17px;
@@ -1665,7 +1667,7 @@ button {
   font-weight: 100;
   font-size: 16px;
 }
-._extraMenuItemsContainer_12v2p_82 {
+._extraMenuItemsContainer_1i24u_84 {
   margin-top: 10px;
   padding: 0 12px 12px;
   overflow-x: hidden;
@@ -1674,12 +1676,12 @@ button {
   font-size: 14px;
   font-weight: 400;
 }
-._extraMenuItemsList_12v2p_91 {
+._extraMenuItemsList_1i24u_93 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-._extraMenuItem_12v2p_82 {
+._extraMenuItem_1i24u_84 {
   text-align: left;
   cursor: pointer;
   display: block;
@@ -1690,7 +1692,7 @@ button {
   text-decoration: none;
   color: #172b4d;
 }
-._addBoardInput_12v2p_107 {
+._addBoardInput_1i24u_109 {
   margin-top: 10px;
   outline: none;
   border: none;
@@ -1706,7 +1708,7 @@ button {
   width: 100%;
   margin-bottom: 0;
 }
-._addBoardButton_12v2p_124 {
+._addBoardButton_1i24u_126 {
   margin-top: 10px;
   background-color: #0079bf;
   width: 100%;
@@ -1726,7 +1728,7 @@ button {
   text-decoration: none;
   white-space: normal;
 }
-._addBoardButton_12v2p_124:hover {
+._addBoardButton_1i24u_126:hover {
   background-color: #0079bfc4;
 }
 ._modal_1sagl_1 {
