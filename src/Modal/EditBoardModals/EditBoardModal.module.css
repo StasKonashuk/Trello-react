@@ -1,0 +1,261 @@
+.modal {
+  position: absolute;
+  top: -70px;
+  right: 30px;
+  height: 160px;
+  width: 400px;
+  z-index: 100;
+}
+.modalContainer {
+  display: flex;
+  overflow-x: hidden;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+.modalContent {
+  background-color: #f4f5f7;
+  border-radius: 2px;
+  margin: 48px 0 80px;
+  overflow: hidden;
+  position: relative;
+  width: 768px;
+  z-index: 6;
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 400;
+  height: 500px;
+}
+.contentWrapper {
+  outline: none;
+}
+.closeButton {
+  border-radius: 50%;
+  color: #42526e;
+  height: 32px;
+  margin: 4px;
+  overflow: hidden;
+  padding: 4px;
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  transition: background-color 85ms, color 85ms;
+  width: 32px;
+  z-index: 2;
+}
+.closeButton:hover {
+  background-color: #091e4214;
+  color: #42526e;
+}
+.closeButtonIcon::before {
+  position: absolute;
+  left: 10px;
+  bottom: 7px;
+  content: ' \2716 ';
+  font-weight: 100;
+  font-size: 15px;
+}
+.taskDetailWindow {
+  min-height: 600px;
+}
+.windowHeader {
+  margin: 12px 40px 8px 56px;
+  min-height: 32px;
+  position: relative;
+  z-index: 1;
+}
+.windowHeaderIcon {
+  left: -40px;
+  position: absolute;
+  top: -3px;
+  color: #42526e;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  font-size: 24px;
+}
+.windowHeaderIcon::before {
+  content: '\270E';
+}
+.windowTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.windowTitle > div > h2 {
+  margin: 0;
+}
+.windowTitle > div > p {
+  margin: 0;
+}
+.boardTitleInput {
+  padding: 10px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  height: 24px;
+  min-height: 24px;
+  color: #172b4d;
+  resize: none;
+  font-family: inherit;
+  width: 90%;
+}
+.taskTitleInput:focus {
+  box-shadow: inset 0 0 0 2px #0079bf;
+  outline: none;
+}
+.windowHeaderInlineContent {
+  margin-top: 5px;
+}
+.windowMainCol {
+  margin-top: 3px;
+  padding: 0 8px 8px 16px;
+  min-height: 24px;
+  position: relative;
+  width: 744px;
+}
+.windowModuleTitle {
+  align-items: center;
+  display: flex;
+  min-height: 32px;
+  margin: 0 0 4px 40px;
+  padding: 8px 0;
+  position: relative;
+}
+.iconDescription {
+  top: 17px;
+  font-size: 24px;
+  height: 32px;
+  line-height: 32px;
+  width: 32px;
+  left: -40px;
+  position: absolute;
+  color: #42526e;
+}
+.iconDescription::before {
+  content: '\2630';
+}
+.descriptionContainer {
+  text-align: left;
+  margin-left: 37px;
+  background-color: #091e420a;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  display: block;
+  min-height: 40px;
+  padding: 8px 12px;
+  width: 88%;
+}
+.descriptionContainer:hover {
+  background-color: rgba(187, 187, 187, 0.6);
+}
+.descriptionInput {
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  display: block;
+  min-height: 40px;
+  text-decoration: none;
+  width: 90%;
+  margin-left: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 140px;
+  font-family: inherit;
+  overflow-wrap: break-word;
+  resize: none;
+}
+.descriptionInput:focus {
+  box-shadow: inset 0 0 0 2px #0079bf;
+  outline: none;
+}
+.buttonsContainer {
+  margin-top: 15px;
+  display: flex;
+  margin-left: 40px;
+}
+.saveDescriptionButton {
+  background-color: #0079bf;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 12px;
+}
+.saveDescriptionButton:hover {
+  background-color: #015e94;
+}
+.closeDescriptionButton {
+  margin-left: 10px;
+  font-size: 25px;
+  border: none;
+  background: none;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  width: 34px;
+  color: #42526e;
+}
+.closeDescriptionInputIcon::before {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+  content: ' \2716 ';
+}
+.editDescriptionButtonActive {
+  margin-right: 10px;
+  align-items: center;
+  background-color: #091e420a;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #172b4d;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 20px;
+  padding: 6px 12px;
+}
+.editDescriptionButtonActive:hover {
+  background-color: #07193834;
+}
+.editDescriptionButton {
+  display: none;
+}
+.editDescriptionButton {
+  display: none;
+}
+.taskDescriptionContainerActive {
+  margin-left: 40px;
+  display: flex;
+}
+.taskDescriptionContainer {
+  display: none;
+}
+.taskDescriptionText {
+  margin: 0;
+}

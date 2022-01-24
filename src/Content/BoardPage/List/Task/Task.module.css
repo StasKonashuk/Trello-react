@@ -1,0 +1,61 @@
+.taskContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 8px 2px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #091e4240;
+  cursor: pointer;
+  margin: 8px 5px 8px 5px;
+  max-width: 300px;
+  min-height: 20px;
+  height: auto;
+  font-size: 14px;
+  text-align: left;
+  color: #5e6c84;
+}
+.taskContainer:hover {
+  background-color: rgba(212, 211, 211, 0.6);
+}
+.taskContainer:hover .editTaskIcon {
+  opacity: 1;
+}
+.taskNameContainer {
+  overflow: hidden;
+  min-height: 20px;
+  height: auto;
+}
+.iconDescription {
+  font-size: 18px;
+  color: #42526e;
+}
+.iconDescription::before {
+  content: '\2630';
+}
+.editTaskButton {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  color: #5e6c84;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: none;
+  margin-bottom: 2px;
+}
+.editTaskButton:hover {
+  background-color: rgba(143, 143, 143, 0.5);
+}
+.editTaskIcon {
+  opacity: 0;
+}
+.editTaskIcon::before {
+  content: ' \270E ';
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+  font-size: 14px;
+}

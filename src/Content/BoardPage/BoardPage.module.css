@@ -1,0 +1,71 @@
+.boardPageContainer {
+  display: flex;
+  width: auto;
+  background-color: rgba(4, 124, 4, 0.76);
+  height: 93.6vh;
+}
+.listsContainer {
+  width: auto;
+  margin-left: 20px;
+  display: flex;
+  padding: 10px;
+  height: 500px;
+  min-height: 500px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.listContainer {
+  background-color: #ebecf0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  position: relative;
+  white-space: normal;
+  width: 255px;
+  margin: 15px 5px 15px 5px;
+  font-size: 10px;
+}
+.editTaskIcon {
+  opacity: 0;
+}
+.editTaskIcon::before {
+  content: ' \270E ';
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+  font-size: 14px;
+}
+.editTaskButton {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  color: #5e6c84;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: none;
+  margin-bottom: 2px;
+}
+.editTaskButton:hover {
+  background-color: rgba(143, 143, 143, 0.5);
+}
+.editListTextarea:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #0079bf;
+}
+.taskNameContainer {
+  overflow: hidden;
+  min-height: 20px;
+  height: auto;
+}
+.iconDescription {
+  font-size: 18px;
+  color: #42526e;
+}
+.iconDescription::before {
+  content: '\2630';
+}
